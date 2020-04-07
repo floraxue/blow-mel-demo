@@ -1,0 +1,198 @@
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Demo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header"></header>
+			<div id="main">
+				<div class="inner">
+				    <a name="traditional"></a>
+			    	<h2><font size = 5 color= #58c3c2>Many-to-Many Conversion Demo</font></h2>
+			    	<p>Traditional many-to-many conversion performs voice conversion from and to speakers that are present in the training set. </p>
+			    	<p>Pay attention to the similarity and naturalness.</p>
+			    	<p>Note: Blow didn't provide pretrain models, and it only had 12 demo audios, so I am not able to make direct comparison to the exact sentence</p>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th><font color= #58c3c2>Source Speaker / Speech</font></th>
+										<th><font color= #58c3c2>Target Speaker / Speech</font></th>
+										<th><font color= #58c3c2>Conversion</font></th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="3"><b>Male to Female</b></td>
+									</tr>
+									<tr>
+										<td>Male <br>
+											<audio controls="">
+												<source src="audios/originals/male1.wav" />
+											</audio>
+										</td>
+										<td>Female <br>
+											<audio controls="">
+												<source src="audios/originals/female1.wav" />
+											</audio>
+										</td>
+										<td>Blow <br>
+											<audio controls="">
+												<source src="audios/blow/male-female.wav" />
+											</audio>
+										</td>
+									</tr>
+									<tr>
+										<td>Male <br>
+											<audio controls="">
+												<source src="audios/originals/p245_05208.wav" />
+											</audio>
+										</td>
+										<td>Female <br>
+											<audio controls="">
+												<source src="audios/originals/p268_04442.wav" />
+											</audio>
+										</td>
+										<td>Ours <br>
+											<audio controls="">
+												<source src="audios/ours/p245M_05208_to_p268F.wav" />
+											</audio>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3"><b>Male to Male</b></td>
+									</tr>
+									<tr>
+										<td>Male <br>
+											<audio controls="">
+												<source src="audios/originals/male2.wav" />
+											</audio>
+										</td>
+										<td>Male <br>
+											<audio controls="">
+												<source src="audios/originals/male3.wav" />
+											</audio>
+										</td>
+										<td>Blow <br>
+											<audio controls="">
+												<source src="audios/blow/male-male.wav" />
+											</audio>
+										</td>
+									</tr>
+									<tr>
+										<td>Male <br>
+											<audio controls="">
+												<source src="audios/originals/p302_01863.wav" />
+											</audio>
+										</td>
+										<td>Male <br>
+											<audio controls="">
+												<source src="audios/originals/p232_00375.wav" />
+											</audio>
+										</td>
+										<td>Ours <br>
+											<audio controls="">
+												<source src="audios/ours/p302M_01863_to_p232M.wav" />
+											</audio>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3"><b>Female to Female</b></td>
+									</tr>
+									<tr>
+										<td>Female <br>
+											<audio controls="">
+												<source src="audios/originals/female2.wav" />
+											</audio>
+										</td>
+										<td>Female <br>
+											<audio controls="">
+												<source src="audios/originals/female3.wav" />
+											</audio>
+										</td>
+										<td>Blow <br>
+											<audio controls="">
+												<source src="audios/blow/female-female.wav" />
+											</audio>
+										</td>
+									</tr>
+									<tr>
+										<td>Female <br>
+											<audio controls="">
+												<source src="audios/originals/p230_07719.wav" />
+											</audio>
+										</td>
+										<td>Female <br>
+											<audio controls="">
+												<source src="audios/originals/p233_03812.wav" />
+											</audio>
+										</td>
+										<td>Ours <br>
+											<audio controls="">
+												<source src="audios/ours/p230F_07719_to_p233F.wav" />
+											</audio>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3"><b>Female to Male</b></td>
+									</tr>
+									<tr>
+										<td>Female <br>
+											<audio controls="">
+												<source src="audios/originals/female4.wav" />
+											</audio>
+										</td>
+										<td>Male <br>
+											<audio controls="">
+												<source src="audios/originals/male4.wav" />
+											</audio>
+										</td>
+										<td>Blow <br>
+											<audio controls="">
+												<source src="audios/blow/female-male.wav" />
+											</audio>
+										</td>
+									</tr>
+									<tr>
+										<td>Female <br>
+											<audio controls="">
+												<source src="audios/originals/p361_01198.wav" />
+											</audio>
+										</td>
+										<td>Male <br>
+											<audio controls="">
+												<source src="audios/originals/p245_05208.wav" />
+											</audio>
+										</td>
+										<td>Ours <br>
+											<audio controls="">
+												<source src="audios/ours/p361F_01198_to_p245M.wav" />
+											</audio>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
